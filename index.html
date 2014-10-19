@@ -1,17 +1,17 @@
 ---
 layout: workshop
 root: .
-venue: Euphoric State University
-address: 123 College Street, Euphoria
-country: United-States
-humandate: Feb 17-18, 2020
+venue: Facultad de Ciencias ULA / ABECyT
+address: Av. Alberto Carnevalli, La Hechicera, Núcleo Universitario Pedro Rincón Gutiérrez, Edificio A.
+country: Venezuela
+humandate: Oct 20-21, 2014
 humantime: 9:00 am - 4:30 pm
-startdate: 2020-06-17
-enddate: 2020-06-18
-latlng: 41.7901128,-87.6007318
+startdate: 2014-10-20
+enddate: 2014-10-21
+latlng: 8.626678,-71.150508
 registration: restricted
-instructor: ["Grace Hopper", "Alan Turing"]
-helper: ["John von Neumann"]
+instructor: ["Francisco Palm"]
+helper: ["Software Carpentry"]
 contact: admin@software-carpentry.org
 #redirect: http://www.3rd.party.workshop.home.page.com
 #eventbrite: 00000000000
@@ -21,18 +21,6 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
     Edit the values in the parameter block above to be appropriate for your workshop.
     Please use three-letter month names for the 'humandate' field.
 -->
-
-<!-- Remove the block below. -->
-<div align="center">
-  <p><strong><em>
-      This page is a template for workshop home pages.
-      <br/>
-      Please see
-      <a href="//github.com/swcarpentry/bc">github.com/swcarpentry/bc</a>
-      for instructions on how to create
-      a repository for your workshop.
-  </em></strong></p>
-</div>
 
 <!--
     This block includes the Eventbrite registration widget if 'eventbrite' has been set in the header.
@@ -50,16 +38,16 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
   src="//www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" height="206px" scrolling="auto"></iframe>
 {% endif %}
 
-<h2>General Information</h2>
+<h2>Información General</h2>
 
 <p>
-  <a href="//software-carpentry.org">Software Carpentry</a>'s mission
-  is to help scientists and engineers become more productive
-  by teaching them basic lab skills for computing
-  like program design, version control, data management, and task automation.
-  This two-day hands-on workshop will cover basic concepts and tools;
-  participants will be encouraged to help one another
-  and to apply what they have learned to their own research problems.
+  La misión de <a href="//software-carpentry.org">Software Carpentry</a>
+  es ayudar a los científicos e ingenieros a ser más productivos
+  enseñándoles destrezas básicas de computación como el diseño de programas,
+  control de versiones, gestión de datos y automatización de tareas.
+  Este taller práctico de dos días cubre los conceptos y herramientas básicas;
+  se animará a los participantes a ayudarse unos a otros
+  y para aplicar lo que han aprendido a sus propios problemas de investigación.
 </p>
 
 <!--
@@ -68,8 +56,9 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
     or if specialized prerequisite knowledge is required, please mention that.
 -->
 <p>
-  <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  <strong>Quién:</strong>
+  La actividad está dirigido a estudiantes universitarios con interés de mejorar
+  sus destrezas en herramientas computacionales para la ciencia reproducible.
 </p>
 
 <!--
@@ -77,11 +66,11 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
 -->
 {% if page.latlng %}
 <p>
-  <strong>Where:</strong>
+  <strong>Dónde:</strong>
   {{ page.address }}.
-  Get directions with
+  Obtener direcciones con
   <a href="//www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
-  or
+  o
   <a href="//maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
 </p>
 {% endif %}
@@ -90,10 +79,12 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
     Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong>
-  Participants must bring a laptop with a few specific software packages installed
-  (listed below). They are also required to abide by Software Carpentry's
-  <a href="http://software-carpentry.org/conduct.html">Code of Conduct</a>.
+  <strong>Requisitos:</strong>
+  Los participantes deben traer un ordenador portátil con unos pocos
+  paquetes de software específicos instalados (enumerados a continuación).
+  También están obligados a cumplir con el
+  <a href="http://software-carpentry.org/conduct.html">Código de Conducta</a>
+  de Software Carpentry.
 </p>
 
 <!--
@@ -101,14 +92,13 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
     If one hasn't, this block inserts the generic contact address for Software Carpentry.
 -->
 <p>
-  <strong>Contact</strong>:
-  Please mail
+  <strong>Contacto:</strong>:
+  Por favor, para mas información envíe un correo electrónico a
   {% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
 </p>
 
 <hr/>
@@ -116,29 +106,30 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
 <!--
     Edit this block to show the schedule for your workshop.
 -->
-<h2>Schedule</h2>
+<h2>Horario</h2>
 
 <div class="row-fluid">
   <div class="span6">
-    <h3>Day 1</h3>
+    <h3>Día 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td> <td>Building programs with Python</td> </tr>
-      <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
+      <tr> <td>08:00</td> <td>Bienvenida e instalación del software</td> </tr>
+      <tr> <td>09:00</td> <td>Control de versiones con Git</td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Receso</em></td> </tr>
+      <tr> <td>12:00</td> <td>Almuerzo</td> </tr>
+      <tr> <td>14:00</td> <td>Construyendo programas con Python</td> </tr>
+      <tr> <td><em>15:30</em></td> <td><em>Receso</em></td> </tr>
+      <tr> <td>17:00</td> <td>Recapitulación</td> </tr>
     </table>
   </div>
   <div class="span6">
-    <h3>Day 2</h3>
+    <h3>Día 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td> <td>Version control with Git</td> </tr>
-      <tr> <td><em>10:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>12:00</td> <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td> <td>Managing data with SQL</td> </tr>
-      <tr> <td><em>14:30</em></td> <td><em>Coffee break</em></td> </tr>
-      <tr> <td>16:00</td> <td>Wrap-up</td> </tr>
+      <tr> <td>09:00</td> <td>Construyendo Programas con R</td> </tr>
+      <tr> <td><em>10:30</em></td> <td><em>Receso</em></td> </tr>
+      <tr> <td>12:00</td> <td>Almuerzo</td> </tr>
+      <tr> <td>14:00</td> <td>Gestión de datos con SQL</td> </tr>
+      <tr> <td><em>15:30</em></td> <td><em>Receso</em></td> </tr>
+      <tr> <td>17:00</td> <td>Recapitulación</td> </tr>
     </table>
   </div>
 </div>
@@ -148,74 +139,76 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
 <!--
     Edit this block to show what topics will be covered.
 -->
-<h2>Syllabus</h2>
+<h2>Programa de Estudios</h2>
 
 <div class="row-fluid">
+<!--
   <div class="span6">
-    <h3>The Unix Shell</h3>
+    <h3>El Shell de Unix</h3>
     <ul>
-      <li>Files and directories: <code>pwd</code>, <code>cd</code>, <code>ls</code>, <code>mkdir</code>, ...</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things: <code>grep</code>, <code>find</code>, ...</li>
-      <li><a href="novice/ref/01-shell.html">Reference...</a></li>
+      <li>Archivos y directorios: <code>pwd</code>, <code>cd</code>, <code>ls</code>, <code>mkdir</code>, ...</li>
+      <li>Histria y completación tab</li>
+      <li>Tuberías y redirección</li>
+      <li>Recorrer archivos</li>
+      <li>Creación y ejecución de scripts de shell</li>
+      <li>Encontrando cosas: <code>grep</code>, <code>find</code>, ...</li>
+      <li><a href="novice/ref/01-shell.html">Referencia...</a></li>
+    </ul>
+  </div>
+-->
+  <div class="span6">
+    <h3>Programando en Python</h3>
+    <ul>
+      <li>Uso de bibliotecas</li>
+      <li>Trabajando con arreglos</li>
+      <li>Leyendo y graficando datos</li>
+      <li>Creando y usando funciones</li>
+      <li>Bucles y condicionales: <code>for</code>, <code>if</code>, <code>else</code>, ...</li>
+      <li>Programación defensiva</li>
+      <li>Usando Python desde la línea de comandos</li>
+      <li><a href="novice/ref/03-python.html">Referencia...</a></li>
     </ul>
   </div>
   <div class="span6">
-    <h3>Programming in Python</h3>
+    <h3>Programando en R</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals: <code>for</code>, <code>if</code>, <code>else</code>, ...</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="novice/ref/03-python.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="span6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals: <code>for</code>, <code>if</code>, <code>else</code></li>
-      <li>Using R from the command line</li>
-      <li><a href="novice/ref/06-R.html">Reference...</a></li>
+      <li>Trabajo con vectores y data frames</li>
+      <li>Leyendo y graficando datos</li>
+      <li>Creando y usando funciones</li>
+      <li>Bucles y condicionales: <code>for</code>, <code>if</code>, <code>else</code></li>
+      <li>Usando R desde la línea de comandos</li>
+      <li><a href="novice/ref/06-R.html">Referencia...</a></li>
     </ul>
   </div>
 </div>
 
 <div class="row-fluid">
   <div class="span6">
-    <h3>Version Control with Git</h3>
+    <h3>Control de versiones con Git</h3>
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="novice/ref/02-git.html">Reference...</a></li>
+      <li>Creando un repositorio</li>
+      <li>Seguimiento de cambios en los archivos: <code>add</code>, <code>commit</code>, ...</li>
+      <li>Visualizar cambios: <code>status</code>, <code>diff</code>, ...</li>
+      <li>Ignorando archivos</li>
+      <li>Trabajando en la web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
+      <li>Resolviendo conflictos</li>
+      <li>Licencias Abiertas</li>
+      <li>Donde hospedar el trabajo, y porque</li>
+      <li><a href="novice/ref/02-git.html">Referencia...</a></li>
     </ul>
   </div>
   <div class="span6">
-    <h3>Managing Data with SQL</h3>
+    <h3>Manejando datos con SQL</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="novice/ref/04-sql.html">Reference...</a></li>
+      <li>Leyendo y ordenando datos</li>
+      <li>Filtros con <code>where</code></li>
+      <li>Cálculo de nuevos valores sobre la marcha</li>
+      <li>Manejo de valores faltantes</li>
+      <li>Combinar valores utilizando agregación</li>
+      <li>Combinar información de múltiples tablas utilizando <code>join</code></li>
+      <li>Creación, modificación y eliminación de datos</li>
+      <li>Programación con bases de datos</li>
+      <li><a href="novice/ref/04-sql.html">Referencia...</a></li>
     </ul>
   </div>
 </div>
@@ -227,14 +220,14 @@ lessons: ['R', 'Python', 'SQL', 'Git', 'Bash', 'VM']
     (In particular, most workshops teach either Python or R, not both.)
 -->
 
-<h2>Setup</h2>
+<h2>Configuración</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, 
-  you will need working copies of the software described below.
-  Please make sure to install everything
-  (or at least to download the installers)
-  <em>before</em> the start of your workshop.
+   Para participar en un taller de Software Carpentry,
+   usted necesitará copias funcionales del software que se describe a continuación.
+   Por favor, asegúrese de instalar todo
+   (o por lo menos descargar los instaladores)
+   <em>antes</em> del inicio de su taller.
 </p>
 
 {% include setup.html %}
